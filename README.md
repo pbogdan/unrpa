@@ -22,5 +22,5 @@ $ nix-env -i ./result
 $ unrpa files...
 ```
 
-Multiple files can be specified at one. The contents will be extracted into the current directory.
+Multiple files can be specified at once. The contents will be extracted into the current directory.
 
