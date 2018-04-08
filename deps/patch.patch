@@ -1,0 +1,12 @@
+diff --git a/Language/Python/Pickle.hs b/Language/Python/Pickle.hs
+index 6da5f97..0b218a1 100644
+--- a/Language/Python/Pickle.hs
++++ b/Language/Python/Pickle.hs
+@@ -773,6 +773,7 @@ executeOne EMPTY_TUPLE         = pushS (PyTuple [])
+ executeOne (PUT    i)          = peekS >>= remember i
+ executeOne (GET    i)          = executeLookup i
+ executeOne (BINPUT i)          = peekS >>= remember i
++executeOne (LONG_BINPUT i)     = peekS >>= remember i
+ executeOne (BINGET i)          = executeLookup i
+ executeOne NONE                = pushS PyNone
+ executeOne NEWTRUE             = pushS (PyBool True)
